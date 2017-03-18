@@ -1,0 +1,64 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  padding: 0;
+  margin: 0; }
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+body {
+  font: 100%/1.5 \5fae\8f6f\96c5\9ed1, Regular;
+  color: #666;
+  background-color: #efebec;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none; }
+
+body.night{
+  color: #959595;
+  background-color: #1f1f1f;
+}
+
+h1, h2, h3, h4, input, textarea, select, button {
+  font-size: 100%; }
+
+h1, h2, h3, h4 {
+  font-family: \5fae\8f6f\96c5\9ed1, Regular; }
+
+textarea {
+  overflow-x: auto;
+  overflow-y: scroll;
+  resize: none; }
+iframe{
+  display: none!important;
+  width:0 !important;
+  height:0 !important;
+  opacity:0 !important;
+}
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: middle; }
+
+i, em {
+  font-style: normal; }
+
+a {
+  color: gray;
+  text-decoration: none; }
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+a:hover {
+  color: #e0e0e0;
+  text-decoration: none; }
+
+a:focus, input {
+  outline: none;
+  background-color: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th, td {
+  padding: 0; }

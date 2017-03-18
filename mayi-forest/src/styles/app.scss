@@ -1,0 +1,354 @@
+#app{
+	background:#f9f9f9;
+}
+h2{
+    font-size: 16px;
+    color: #444;
+    padding-left: 15px;
+    border-bottom: 1px solid #e9e9e9;
+	height: 35px;
+	line-height: 35px;
+}
+.more{
+	a{
+		font-size: 14px;
+	    color: #333;
+	    text-align: center;
+	    display: block;
+	    border-top: 1px solid #e9e9e9;
+	    height: 35px;
+	    line-height: 35px;
+	}
+}
+.header{
+	position:relative;
+	.header-img{
+		width:100%;
+	}
+	.my-info{
+		position:absolute;
+		top:10px;
+		right:0;
+		border-radius:30px 0 0 30px;
+		width:150px;
+		height:48px;
+		background:#bee3fe;
+		z-index:10;
+		font-size:12px;
+		img {
+			width:40px;
+			height:40px;
+		    border-radius: 50%;
+			margin: 4px 2px 4px 4px;
+			float:left;
+		}
+		.my-user{
+			float: left;
+			color: #444;
+			margin-top:6px;
+		}
+		p{
+			width: 96px;
+		    border-radius: 8px;
+		    text-align: right;
+		    height: 15px;
+		    line-height: 15px;
+		    background: #ecfccc;
+		    color: #11a120;
+		    border: 1px solid #a2e36a;
+		    font-size: 8px;
+		}
+	}
+	.give{
+		position:absolute;
+		top:60px;
+		left:95px;
+		img{
+			width:17px;
+			margin-right:4px;
+		}
+		p{
+			font-size:12px;
+			margin-top:4px;
+			color:#11a120;
+		}
+		i{
+		    display: block;
+			width:55px;
+			height:55px;
+			line-height:55px;
+			color:#11a120;
+			font-size:16px;
+			margin-left: 6px;
+			border-radius:50%;
+			text-align:center;
+			background: -webkit-radial-gradient(circle, #baf424, #c9f83b,#fff);
+			background: -moz-radial-gradient(circle, #baf424, #c9f83b,#fff);
+			background: -o-radial-gradient(circle, #baf424, #c9f83b,#fff);
+			background: radial-gradient(circle, #baf424, #c9f83b,#fff);
+		}
+	}
+
+}
+/****最新动态****/
+.news {
+	background:#fff;
+	margin-bottom:7px;
+	h2{
+		margin-top: -10px;
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	    -webkit-justify-content: space-between;
+	    -moz-justify-content: space-between;
+	    justify-content: space-between;
+	    img{
+	    	width:80px;
+	    	margin-right:15px;
+	    }
+	}
+	ul{
+		overflow:hidden;
+		margin:14px 0px 14px 15px;
+		li{
+			margin-right:18px;
+			float:left;
+			position:relative;
+			img{
+				width:32px;
+				height:32px;
+				float:left;
+			}
+			em{
+				position: absolute;
+			    bottom: 0;
+			    right: -10px;
+			    background: #2cbe6d;
+			    border-radius: 50%;
+			    text-align: center;
+			    border: 1px solid #fff;
+			    width: 15px;
+			    height: 15px;
+			    line-height: 15px;
+			    color: #fff;
+			    font-size: 8px;
+			}
+		}
+	}
+	.list{
+		font-size:12px;
+		margin-bottom: 4px;
+		display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: -moz-flex;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	    -webkit-justify-content: space-between;
+	    -moz-justify-content: space-between;
+	    justify-content: space-between;
+		.human{
+			margin-left:15px;
+			b{
+				margin-right: 8px;
+				color:#000;
+			}
+			span{
+			color:#292929;
+			}
+		}
+		.time{
+			margin-right:15px;
+			color:#929292;
+		}
+	}
+}
+/****排行榜****/
+.rank{
+	background:#fff;
+	font-size:12px;
+	margin-bottom: 7px;
+	.content{
+		margin-bottom: -1px;
+		.list-margin{
+			padding-left:15px;
+			&:active{
+		    	background:#f9f9f9;
+		    }
+		    &:last-child{
+		    	border-bottom:0;
+		    }
+		}
+		.list{
+			padding: 8px 0;
+		    border-bottom: 1px solid #e9e9e9;
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: -moz-flex;
+		    display: flex;
+		    -webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		    -webkit-justify-content: space-between;
+		    -moz-justify-content: space-between;
+		    justify-content: space-between;
+		    
+		    .num{
+		    	margin-right:15px;
+		    	line-height:36px;
+		    	color:#444;
+		    }
+		    img{
+		    	width:32px;
+		    	height:32px;
+		    }
+		    .avatar{
+		    	float:left;
+		    	span{
+		    		margin-right:5px;
+		    		img{
+		    			width:15px;
+		    			height:20px;
+		    		}
+		    	}
+		    }
+		    .user-other{
+		    	float:left;
+		    	margin-left:10px;
+		    	b{
+		    		color:#444;
+		    	}
+		    	p{
+		    		color:#999;
+		    	}
+		    }
+		}
+	}
+}
+/****加好友 收能量****/
+.add-friend{
+	background:#fff;
+	font-size:12px;
+	h2{
+		border-bottom:0;
+	}
+	.content{
+		margin:5px 0 0 15px;
+		overflow-x:auto;
+		height:138px;
+		overflow:hidden;
+		img{
+			width:60px;
+			height:60px;
+		}
+		.list{
+			width:60px;
+			padding-bottom: 30px;
+			margin-right:35px;
+			float:left;
+			p{
+				text-align:center;
+				color:#444;
+				margin:6px 0;
+			}
+			span{
+				padding: 4px 6px;
+				border-radius: 3px;
+				color:#fff;
+				background:#2fbd6b;
+				box-shadow: 0px 2px 0px #1ca04d;
+			}
+		}
+	}	
+}
+.footer{
+	font-size:12px;
+	text-align:center;
+	color:#999;
+	margin-top:10px;
+	img{
+	    width: 78px;
+	}
+	a{
+		color:#999;
+		position:relative;
+		&:after{
+		    display: block;
+		    content: '';
+		    position: absolute;
+		    top: 2px;
+		    right: -8px;
+		    width: 6px;
+		    height: 6px;
+		    border-top: 1px solid #999;
+		    border-right: 1px solid #999;
+		    -webkit-transform: rotate(45deg);
+		    transform: rotate(45deg);
+		}
+	}
+}
+
+.back{
+	position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -25px;
+    a{
+    	background:#2fbd6b;
+    	color:#fff;
+    	text-align:center;
+    	height:50px;
+    	line-height:50px;
+    	display:block;
+    	border-radius:20px;
+    }
+}
+@-webkit-keyframes bounce-up {
+    25% {
+        -webkit-transform: translateY(4px);
+    }
+    50%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(-4px);
+    }
+}
+@-moz-keyframes bounce-up {
+    25% {
+        -webkit-transform: translateY(4px);
+    }
+    50%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(-4px);
+    }
+}
+@keyframes bounce-up {
+    25% {
+        transform: translateY(4px);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-4px);
+    }
+}
+ 
+.give{
+    -webkit-animation: bounce-up 1.4s linear infinite;
+    -moz-animation: bounce-up 1.4s linear infinite;
+    animation: bounce-up 1.4s linear infinite;
+}
+.active{
+	background:#000;
+}
