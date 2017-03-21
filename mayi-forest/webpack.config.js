@@ -1,6 +1,7 @@
 
 'use strict';
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");  //css单独打包
 
 module.exports = {
@@ -35,6 +36,13 @@ module.exports = {
 
     plugins: [
         new ExtractTextPlugin('main.css'),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            //template: path.resolve(__dirname, '../mayi-forest/index.html'),
+             template:__dirname+"/index.html",//new 这个插件的实例，并传入相关的参数
+            inject: true
+
+        })
     ]
 
 }
