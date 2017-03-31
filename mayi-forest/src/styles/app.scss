@@ -241,7 +241,7 @@ h2{
 		margin:5px 0 0 15px;
 		overflow-x:auto;
 		height:138px;
-		overflow:hidden;
+		white-space: nowrap;
 		img{
 			width:60px;
 			height:60px;
@@ -250,7 +250,7 @@ h2{
 			width:60px;
 			padding-bottom: 30px;
 			margin-right:35px;
-			float:left;
+			display:inline-block;
 			p{
 				text-align:center;
 				color:#444;
